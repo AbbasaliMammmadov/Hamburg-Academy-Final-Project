@@ -1,0 +1,93 @@
+.hero-header {
+  padding: 20px 40px;
+  /* background: radial-gradient(circle at top left, #141625 0%, #020308 60%, #000000 100%); */
+  color: #ffffff;
+}
+
+.hero-header-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+/* ЛОГО */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo-img {
+  width: 240px;
+  height: 37px;
+  object-fit: contain;
+}
+
+/* НАВИГАЦИЯ */
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 10px 28px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 500;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 6px 14px;
+  border-radius: 999px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.nav-link.active {
+  background: #ffffff;
+  color: #000000;
+}
+
+.nav-link:hover {
+  color: #000000;
+  background: white;
+}
+
+/* КНОПКА JOIN NOW */
+.join-btn {
+  padding: 12px 28px;
+  border-radius: 10px;
+  background: #d8ff00;
+  color: #000000;
+  font-weight: 700;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 0 20px rgba(216, 255, 0, 0.5);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.join-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 0 26px rgba(216, 255, 0, 0.8);
+}
+
+/* Адаптив */
+@media (max-width: 900px) {
+  .hero-header-inner {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-menu {
+    order: 3;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .join-btn {
+    order: 2;
+  }
+}

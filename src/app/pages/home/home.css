@@ -1,0 +1,57 @@
+.heroSection {
+    background-image: url("https://uiparadox.co.uk/templates/fit-nation/v2/assets/media/hero/hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 712px;
+    display: flex;
+    color: #fff;
+    position: relative;
+    align-items: center;
+}
+
+.heroText {
+    /* font-size: clamp(61px, 8.333vw, 220px); */
+    font-weight: 900;
+    line-height: 100%;
+    letter-spacing: -4.8px;
+    font-style: normal;
+    font-family: "Nexa", sans-serif;
+    background: linear-gradient(180deg, #FAFAFA 50%, rgba(153, 153, 153, 0.2) 89.06%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    z-index: 99;
+}
+
+.rightHeroBg {
+    background-image: url("https://uiparadox.co.uk/templates/fit-nation/v2/assets/media/hero/image-3.png");
+    width: 30%;
+    height: 30%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-card-section {
+    background-color: #0C0C0D;
+}
+
+.about-cards {
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    background-color: #0C0C0D;
+    width: 90%;
+    margin: auto;
+}
+
+.left-card {
+    margin-top: 30px;
+    width: 79%;
+    height: 700px;
+}
+
+.card{
+    background-color: #0c0c0d;
+}
