@@ -6,6 +6,8 @@ import "./home.css";
 import Image from "next/image";
 import FatBurningCard from "@/app/Components/row/FatBurningCard";
 import ScheduleSection from "@/app/Components/Schedule/ScheduleSection";
+import { Dumbbell, Bike, ArrowUpRight } from "lucide-react";
+
 
 const HomePage = () => {
   const [modal, setModal] = useState(false);
@@ -227,6 +229,75 @@ const HomePage = () => {
       </div>
     </section>
     <ScheduleSection />
+    <section className="relative w-full bg-black text-white overflow-hidden py-20">
+
+      {/* Фон-картинка справа */}
+      <div className="absolute inset-0">
+        <Image
+          src="/inner-banner.png"   // <-- помести сюда свое фото (как на скрине)
+          alt="Membership Background"
+          fill
+          className="object-cover opacity-60"
+        />
+      </div>
+
+      {/* Тёмный градиент слева, чтобы текст лучше читался */}
+      <div className="absolute inset-0 from-black/80 via-black/60 to-transparent" />
+
+      <div className="relative z-10 w-[90%] mx-auto max-w-7xl">
+
+        {/* Маленький текст */}
+        <p className="uppercase tracking-[0.25em] text-sm text-[#D7FB00] mb-4">
+          JOIN YOUR LOCAL !
+        </p>
+
+        {/* Заголовок */}
+        <h2 className="text-4xl md:text-6xl font-extrabold leading-tight text-[#D7FB00]">
+          WIZE MEMBERSHP <br /> GREAT VALUE EVERYDAY
+        </h2>
+
+        {/* Подзаголовок */}
+        <p className="mt-6 text-lg text-gray-200 max-w-xl">
+          Lorem ipsum dolor sit amet consectetur. Sed euismod justo volutpat malesuada.
+          Purus in pellentesque a convallis morbi convallis.
+        </p>
+
+        {/* Иконки-фичи — три колонки */}
+        <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-10 max-w-5xl">
+
+          {/* 1 */}
+          <div className="flex items-start gap-4">
+            <div className="w-16 h-16 flex items-center justify-center bg-white rounded-full">
+              <Dumbbell size={32} className="text-black" />
+            </div>
+            <p className="text-gray-200 text-lg leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur. Sed euismod justo volutpat malesuada.
+            </p>
+          </div>
+
+          {/* 2 */}
+          <div className="flex items-start gap-4">
+            <div className="w-16 h-16 flex items-center justify-center bg-white rounded-full">
+              <Bike size={32} className="text-black" />
+            </div>
+            <p className="text-gray-200 text-lg leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur. Sed euismod justo volutpat malesuada.
+            </p>
+          </div>
+
+          {/* 3 */}
+          <div className="flex items-start gap-4">
+            <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center">
+              <ArrowUpRight size={32} className="text-black" />
+            </div>
+            <p className="text-gray-200 text-lg leading-relaxed">
+              Lorem ipsum dolor sit amet consectetur. Sed euismod justo volutpat malesuada.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
     </main>
   );
 };

@@ -74,7 +74,7 @@ export default function ScheduleSection() {
           <thead>
             <tr>
               {/* левый верхний угол с иконкой времени */}
-              <th className="w-28 md:w-40 h-16 border border-[#2A2A2A] bg-[#181818] text-center align-middle">
+              <th className="w-28 md:w-40 h-13 border border-[#2A2A2A] bg-[#181818] text-center align-middle">
                 <span className="text-xl">🕒</span>
               </th>
               {days.map((day) => (
